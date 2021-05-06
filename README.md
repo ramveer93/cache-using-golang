@@ -50,3 +50,6 @@ Also for sync the library uses https://golang.org/pkg/sync/ to make method mutua
 ## Limitations:
 - Only supports string type key and values
 
+# License 
+MIT License 2021
+
