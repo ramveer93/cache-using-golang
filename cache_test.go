@@ -9,10 +9,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func main() {
-
-}
-
 func TestCacheInit(t *testing.T) {
 	cache := New(3)
 	assert.Equal(t, 3, cache.capacity)
@@ -203,7 +199,7 @@ func TestConsurrent(t *testing.T) {
 	cache := New(3)
 	assert.Equal(t, 3, cache.capacity)
 	ch := make(chan string)
-	const iterations = 1000
+	const iterations = 10
 	var a [iterations]string
 
 	costFunc := func(m map[string]*list.Element, capacity int) int {
