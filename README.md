@@ -49,6 +49,7 @@ Also for sync the library uses https://golang.org/pkg/sync/ to make method mutua
 
 ## Limitations:
 - Only supports string type key and values
+- Need to optimize the sync access of method, instead of syncronizing whole method , we can think of synchronizing the block of code or just map and list.
 
 # License 
 MIT License 2021
